@@ -1,0 +1,81 @@
+.login {
+  background-image: url(../image/background.png);
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  position: fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  form {
+    .mt(260);
+    .ng-invalid {
+      &+span {
+        position: absolute;
+        color: @dangerColor;
+        right:20px;
+        height:100%;
+        font-size: 12px;
+        width:100%;
+        right:0;
+        background-color: transparent;
+        text-align: right;
+      }
+    }
+    .form-line {
+      margin-left: auto;
+      margin-right: auto;
+      font-size:0;
+      .w(300);
+      .h(40);
+      background-color: @formBgColor;
+      color:@defaultColor;
+      &:first-child {
+        border-bottom:1px solid @defaultColor;
+      }
+      .account {
+        background:@iconBgColor url(../image/account.png) no-repeat 20px 10px;
+        .w(55);
+        height:100%;
+
+      }
+      .lock {
+        background:@iconBgColor url(../image/lock.png) no-repeat 20px 10px;
+        .w(55);
+        height:100%;
+      }
+      input {
+        box-sizing: border-box;
+        border-width:0;
+        background-color: @formBgColor;
+        outline-width:0;
+        height:100%;
+        vertical-align: top;
+        font-size: 20px;
+        padding-left: 30px;
+        color: @defaultColor;
+        .w(245);
+        &::-webkit-input-placeholder {
+          color: @defaultColor;
+        }
+      }
+    }
+    button {
+      .w(300);
+      .h(35);
+      font-size:22px;
+      font-weight:bold;
+      &.login-btn {
+        margin-top:75px;
+        background-color: @headBgcolor;
+        color: @defaultColor;
+      }
+      &.register-btn {
+        margin-top:20px;
+        background-color: @btnBgColor;
+        color: @headBgcolor;
+        border: 1px solid @headBgcolor;
+      }
+    }
+  }
+}

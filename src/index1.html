@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>拉钩APP</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style/index.css">
+
+</head>
+<body>
+<div ui-view></div>
+<script>
+    //自适应设置
+    document.getElementsByTagName('html')[0].style.fontSize=window.screen.width/10+'px';
+</script>
+<script src="script/angular.js"></script>
+<script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="../bower_components/angular-validation/dist/angular-validation.min.js"></script>
+<script src="script/angular-cookies.js"></script>
+<script src="script/index.js"></script>
+<script src="script/config/router.js"></script>
+<script src="script/config/controller.js"></script>
+<script src="script/config/directive.js"></script>
+<script src="script/config/filterByObj.js"></script>
+<script src="script/config/validation.js"></script>
+
+</body>
+</html>
